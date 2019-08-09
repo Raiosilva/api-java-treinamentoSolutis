@@ -2,7 +2,6 @@ package br.com.solutis.treinamento.restAPI.model;
 
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -40,7 +39,7 @@ public class Conta implements Serializable {
 	
 	private LocalDate dataPagamento;
 	
-	LocalDate dataParcela = LocalDate.now();
+//	LocalDate dataParcela = LocalDate.now();
 
 		
 	//Metodos
@@ -56,6 +55,7 @@ public class Conta implements Serializable {
 	public Double getRestanteApagar() {
 		return getValorTotal() - getPago();
 	}
+	
 	
 //	public Double getValorComDesconto() {
 //		if( dataPagamento  == dataParcela) {

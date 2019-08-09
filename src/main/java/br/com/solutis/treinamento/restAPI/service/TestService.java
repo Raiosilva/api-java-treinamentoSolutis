@@ -1,5 +1,6 @@
 package br.com.solutis.treinamento.restAPI.service;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +19,7 @@ public class TestService {
 	
 	public void instantiationDatabase() {
 		
-		Conta c1 = new Conta(null, "Pagamento Aluguel", 400.00, 3.0, TipoEnum.PAGAR, CicloEnum.PARCELADO, null);
+		Conta c1 = new Conta(null, "Pagamento Aluguel", 400.00, 3.0, TipoEnum.PAGAR, CicloEnum.PARCELADO, LocalDate.now() );
 		
 		receberDao.saveAll(Arrays.asList(c1));
 		
