@@ -7,13 +7,13 @@ public enum CicloEnum {
 	
 	private String descricao;
 	
-	public String getDescricao() {
-		return descricao;
-	}
-
+	//Metodo
 	private CicloEnum(String descricao) {
 		this.descricao = descricao;
 	}
 
-
+	//Getters 
+	public String getDescricao() {
+		return descricao;
+	}
 }

@@ -7,13 +7,13 @@ public enum TipoEnum {
 	
 	private String descricao;
 
-	public String getDescricao() {
-		return descricao;
-	}
-
+	//Metodo
 	private TipoEnum(String descricao) {
 		this.descricao = descricao;
 	}
 
-
+	//Getter
+	public String getDescricao() {
+		return descricao;
+	}
 }

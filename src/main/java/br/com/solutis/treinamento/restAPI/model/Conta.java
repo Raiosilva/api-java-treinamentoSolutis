@@ -66,25 +66,27 @@ public class Conta implements Serializable {
 //		return valor;
 //	}
 	
-	public Conta(LocalDate dataPagamento) {
-		super();
-		this.dataPagamento = dataPagamento;
-	}
-
-	public LocalDate getDataPagamento() {
-		return dataPagamento;
-	}
-
-	public void setDataPagamento(LocalDate dataPagamento) {
-		this.dataPagamento = dataPagamento;
-	}
-
+	//Metodos
+	
 	public Conta (){}
 
     public Conta(Long id) {
 		super();
 		this.id = id;
 	}
+
+	public Conta(Long id, String descricao, Double valor, Double parcelas, TipoEnum tipo, CicloEnum ciclo, LocalDate dataPagamento) {
+		super();
+		this.id = id;
+		this.descricao = descricao;
+		this.valor = valor;
+		this.parcelas = parcelas;
+		this.tipo = tipo;
+		this.ciclo = ciclo;
+		this.dataPagamento = dataPagamento;
+	}
+	
+	//Getters and Setters
 
 	public Long getId() {
 		return id;
@@ -134,14 +136,12 @@ public class Conta implements Serializable {
 		this.ciclo = ciclo;
 	}
 
-	public Conta(Long id, String descricao, Double valor, Double parcelas, TipoEnum tipo, CicloEnum ciclo) {
-		super();
-		this.id = id;
-		this.descricao = descricao;
-		this.valor = valor;
-		this.parcelas = parcelas;
-		this.tipo = tipo;
-		this.ciclo = ciclo;
+	public LocalDate getDataPagamento() {
+		return dataPagamento;
+	}
+
+	public void setDataPagamento(LocalDate dataPagamento) {
+		this.dataPagamento = dataPagamento;
 	}
 
 	@Override
