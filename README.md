@@ -17,4 +17,5 @@ Como utilizar:
 
 De maneira simples, após o Download você pode acessar via navegador http://localhost:8080/h2-console o db de teste da aplicação ou inserir dados via InSomnia ou Postman. Após, mandar um run spring-boot na aplicação é claro.
 
+Obs.: Sugiro utilizar pelo postman ou inSomnia.
 
