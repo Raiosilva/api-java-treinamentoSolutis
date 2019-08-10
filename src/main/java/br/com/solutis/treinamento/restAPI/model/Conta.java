@@ -56,13 +56,9 @@ public class Conta implements Serializable {
 		return getValorTotal() - getPago();
 	}
 	
+	//Metodo Gerar pagamento permanente
 	
 //	public Double getValorComDesconto() {
-//		if( dataPagamento  == dataParcela) {
-//			double novoValor = valor - 0.15;
-//			valor = novoValor;
-//		}
-//		
 //		return valor;
 //	}
 	
